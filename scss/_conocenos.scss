@@ -1,0 +1,56 @@
+body{
+    background-image: url(../imagenes/aguaMar2.jpg);
+    background-size: cover;
+
+    .carousel{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 1rem;
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .sectionConocenos{
+        display: grid;
+        grid-template-columns: 45vw 45vw; 
+        grid-template-rows: auto;
+        margin: 5rem;
+        .conocenos{
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 1rem;
+            h2{
+                margin: 20px;
+                padding-bottom: 20px;
+                border-bottom: solid 1px #e9c16a;
+                color: white;
+            }
+            h6{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: white;
+                size: 15px;
+                padding-top: 40px;
+                line-height: 20px;
+            }
+        }
+    }
+    @media (max-width:768px){
+        .carousel{
+            z-index: -2;
+            width: 75vw;
+            height: 80vh;
+        }
+        .sectionConocenos{
+            margin: 45px;
+            display: grid;
+            grid-template-columns: 75vw;
+            grid-template-rows: 80vh 80vh;
+            .h6Conocenos{
+                display: none;
+            }
+            
+        }
+    }
+}

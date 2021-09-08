@@ -1,0 +1,376 @@
+body {
+  font-family: 'Train One', cursive;
+  margin: 0;
+  /*MEDIA MENU*/ }
+  body video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100; }
+  body header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+    body header .logoMenu {
+      display: none;
+      width: 60px;
+      height: 60px; }
+    body header #btnMenu {
+      display: none; }
+    body header label {
+      display: none;
+      width: 75px;
+      height: 45px;
+      padding: 3px 0px 10px; }
+      body header label:hover {
+        cursor: pointer;
+        background-color: #03989E; }
+    body header .menu ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body header .menu ul .seccionActiva {
+        color: #03989E; }
+      body header .menu ul a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white; }
+        body header .menu ul a:hover {
+          color: #03989E;
+          transition: all 0.5s; }
+        body header .menu ul a img {
+          width: 60px;
+          height: 60px; }
+  @media (max-width: 768px) {
+    body header #btnMenu:checked ~ .menu {
+      margin: 0; }
+    body header label {
+      display: block; }
+    body header .menu {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      width: 150px;
+      margin-left: -150px; }
+      body header .menu ul {
+        align-items: unset;
+        flex-direction: column; }
+        body header .menu ul li:hover {
+          background-color: #03989E; }
+        body header .menu ul li a:hover {
+          color: white; }
+        body header .menu ul .logo {
+          display: none; } }
+
+body .titulo {
+  display: grid;
+  grid-template-rows: 86.5vh; }
+
+body .tituloPrincipal {
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 500px; }
+  body .tituloPrincipal h4 {
+    font-size: 15px;
+    letter-spacing: 8px; }
+  body .tituloPrincipal h1 {
+    letter-spacing: 8px;
+    font-size: 45px; }
+
+body p {
+  position: absolute; }
+
+@media (max-width: 1012px) {
+  body .titulo {
+    height: 84vh; } }
+
+@media (max-width: 768px) {
+  body .titulo {
+    height: 90.9vh; }
+  body .tituloPrincipal {
+    background: unset; } }
+
+body .linkGaleria {
+  background-image: url(../imagenes/aguaMar2.jpg);
+  background-size: cover;
+  height: 115vh; }
+
+body .linkGaleriaGrid {
+  border-bottom: solid 1px white;
+  padding-bottom: 40px;
+  margin: 0px 100px;
+  display: grid;
+  grid-template-columns: 25vw 25vw 33vw;
+  grid-template-rows: 60vh; }
+  body .linkGaleriaGrid img {
+    align-self: center;
+    width: 30vw;
+    height: 50vh; }
+  body .linkGaleriaGrid .salmon1 {
+    margin-top: 50px;
+    z-index: 1; }
+    body .linkGaleriaGrid .salmon1:hover {
+      transform: scaleY(1.1);
+      transition-duration: 0.35s; }
+  body .linkGaleriaGrid .salmon2 {
+    margin-bottom: 50px;
+    z-index: 5; }
+    body .linkGaleriaGrid .salmon2:hover {
+      transform: scaley(1.1);
+      transition-duration: 0.35s; }
+  body .linkGaleriaGrid .descubre {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-self: center;
+    padding: 30px; }
+    body .linkGaleriaGrid .descubre h2 {
+      margin: 10px;
+      letter-spacing: 8px;
+      font-size: 1fr; }
+      body .linkGaleriaGrid .descubre h2 a {
+        text-decoration: none;
+        color: white; }
+      body .linkGaleriaGrid .descubre h2:hover {
+        transform: scale(1.05, 1.05);
+        transition-duration: 0.35s; }
+    body .linkGaleriaGrid .descubre h3 {
+      margin: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      letter-spacing: 8px;
+      color: #e9c16a; }
+    body .linkGaleriaGrid .descubre h6 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif; }
+
+@media (max-width: 1012px) {
+  body .linkGaleria {
+    height: 150vh; } }
+
+@media (max-width: 868px) {
+  body .linkGaleria {
+    height: 190vh; }
+  body .linkGaleriaGrid {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30% 30% 25%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px; }
+    body .linkGaleriaGrid img {
+      width: 50vw;
+      height: 40vh;
+      justify-self: center; }
+    body .linkGaleriaGrid .salmon1 {
+      margin: 100px 0px 0px 90px; }
+      body .linkGaleriaGrid .salmon1:hover {
+        transform: scalex(1.1);
+        transition-duration: 0.35s; }
+    body .linkGaleriaGrid .salmon2 {
+      margin: 0px 90px 0px 0px; }
+      body .linkGaleriaGrid .salmon2:hover {
+        transform: scalex(1.1);
+        transition-duration: 0.35s; }
+    body .linkGaleriaGrid .descubre {
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 70vw;
+      justify-self: center; }
+      body .linkGaleriaGrid .descubre h2 {
+        margin: 10px;
+        color: white;
+        letter-spacing: 8px;
+        font-size: 2rem;
+        text-align: center; }
+      body .linkGaleriaGrid .descubre h3 {
+        margin: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 8px;
+        font-size: 1rem;
+        text-align: center; }
+      body .linkGaleriaGrid .descubre h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px; } }
+
+body .footerGrid {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  margin: 40px 100px 0px;
+  grid-template-columns: 30vw 20vw 30vw;
+  grid-template-rows: 39vh;
+  justify-items: center;
+  align-items: center; }
+  body .footerGrid ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  body .footerGrid .fab {
+    font-size: 70px;
+    color: white;
+    margin: 10px; }
+    body .footerGrid .fab:hover {
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+      color: #e9c16a; }
+  body .footerGrid h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #e9c16a;
+    color: white;
+    letter-spacing: 8px; }
+  body .footerGrid h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center; }
+
+@media (max-width: 1012px) {
+  body .footerGrid {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    grid-template-rows: 20vh 30vh;
+    grid-template-columns: 75vw;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 50px; }
+  body .liFooter {
+    margin: 0px 50px; }
+  body h6 {
+    font-size: 15px; } }
+
+@media (max-width: 790px) {
+  body .footerGrid {
+    background-color: rgba(0, 0, 0, 0); }
+  body .sectionFooter {
+    background-color: rgba(0, 0, 0, 0.2); }
+  body .porque {
+    display: none; } }
+
+body {
+  background-image: url(../imagenes/aguaMar2.jpg);
+  background-size: cover; }
+  body .carousel {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 1rem; }
+    body .carousel img {
+      width: 500px;
+      height: 500px; }
+  body .sectionConocenos {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto;
+    margin: 5rem; }
+    body .sectionConocenos .conocenos {
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin: 1rem; }
+      body .sectionConocenos .conocenos h2 {
+        margin: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #e9c16a;
+        color: white; }
+      body .sectionConocenos .conocenos h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        size: 15px;
+        padding-top: 40px;
+        line-height: 20px; }
+  @media (max-width: 768px) {
+    body .carousel {
+      z-index: -2;
+      width: 75vw;
+      height: 80vh; }
+    body .sectionConocenos {
+      margin: 45px;
+      display: grid;
+      grid-template-columns: 75vw;
+      grid-template-rows: 80vh 80vh; }
+      body .sectionConocenos .h6Conocenos {
+        display: none; } }
+
+body .menuCompleto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+body .tituloMenu {
+  font-family: 'Train One', cursive;
+  color: #e9c16a;
+  font-size: 30px;
+  letter-spacing: 10px; }
+
+body .lista {
+  color: whitesmoke;
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+body .contacto {
+  height: 80vh;
+  text-align: center; }
+  body .contacto .tituloMenu {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #e9c16a; }
+  body .contacto label {
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 25px; }
+
+@media (max-width: 768px) {
+  body .contacto {
+    height: 100vh; }
+  body .porque {
+    display: none; } }
+
+body .contenedor {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  body .contenedor .cards {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0.2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    body .contenedor .cards:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+      body .contenedor .cards:hover a {
+        color: #e9c16a;
+        transition: all 0.5s; }
+    body .contenedor .cards img {
+      width: 330px;
+      height: 260px; }
+    body .contenedor .cards h4 {
+      font-weight: 600; }
+    body .contenedor .cards a {
+      text-decoration: none;
+      color: white;
+      padding: 30px; }

@@ -1,0 +1,130 @@
+body{
+    .linkGaleria{
+        background-image: url(../imagenes/aguaMar2.jpg);
+        background-size: cover;
+        height: 115vh;
+    }
+    .linkGaleriaGrid{
+        border-bottom: solid 1px white;
+        padding-bottom: 40px;
+        margin: 0px 100px;
+        display: grid;
+        grid-template-columns: 25vw 25vw 33vw;
+        grid-template-rows: 60vh;
+        img{
+            align-self: center;
+            width: 30vw;
+            height: 50vh;
+        }
+        .salmon1{
+            margin-top: 50px;
+            z-index: 1;
+            &:hover{
+                transform: scaleY(1.1) ;
+                transition-duration: 0.35s;
+
+            }
+        }
+        .salmon2{
+            margin-bottom: 50px;
+            z-index: 5;
+            &:hover{
+                transform: scaley(1.1);
+                transition-duration: 0.35s;
+            }
+        }
+        .descubre{
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.2);
+            align-self: center;
+            padding: 30px;
+            h2{
+                margin: 10px;
+                letter-spacing: 8px;
+                font-size: 1fr;
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+                &:hover{
+                    transform: scale(1.05,1.05);
+                    transition-duration: 0.35s;
+                }
+            }
+            h3{
+                margin: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                letter-spacing: 8px;
+                color: #e9c16a; 
+            }
+            h6{
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+    }
+    @media (max-width:1012px){
+        .linkGaleria{
+            height: 150vh;
+        }
+    }
+    @media (max-width:868px){
+        .linkGaleria{
+            height: 190vh;
+        }
+        .linkGaleriaGrid{
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 30% 30% 25%;
+            height: 100vh;
+            padding:0px;
+            margin: 0px;
+            img{
+                width: 50vw;
+                height: 40vh;
+                justify-self: center;
+            }
+            .salmon1{
+                margin: 100px 0px 0px 90px;
+                &:hover{
+                    transform: scalex(1.1) ;
+                    transition-duration: 0.35s;
+    
+                }
+            }
+            .salmon2{
+                margin: 0px 90px 0px 0px;
+                &:hover{
+                    transform: scalex(1.1);
+                    transition-duration: 0.35s;
+                }
+            }
+            .descubre{
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0.2);
+                width: 70vw;
+                justify-self: center;
+                h2{
+                    margin: 10px;
+                    color:white;
+                    letter-spacing: 8px;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                h3{
+                    margin: 10px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    letter-spacing: 8px;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                h6{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
